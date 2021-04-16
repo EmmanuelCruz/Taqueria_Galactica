@@ -3,7 +3,7 @@
 ## Emmanuel Cruz Hernández
 ## Karem Ramos Calpulalpan
 
-\section{Desarrollo de la problemática}
+### Desarrollo de la problemática
 
 Después del gran éxito que ha tenido una taquería en el planeta tierra, los aliens han pensado crear sus propios tacos y exportarlos a la tierra con el fin de brindar más variedad de sabores en la carne (o lo que sea que agreguen a los tacos). Esta idea la han pensado 4 planetas: Marte, Mercurio, Saturno y Venus.
 
@@ -13,74 +13,30 @@ Después de algunos meses, las compañías encargadas de comprar tacos fuera del
 
 Para tener un mejor control de venta, los aliens y los seres de la tierra decidieron pedir ayuda a los estudiantes de la Facultad de Ciencias para crear un programa que pueda vender los tacos y muestre todas las funcionalidades descritas.
 
-\section{Patrones de diseño utilizados}
+### Patrones de diseño utilizados
 
-\begin{itemize}
-    \item \textbf{Iterator}
-    
-    Cada uno de los planetas que acordaron crear sus propios tacos para la tierra no se pusieron de acuerdo entre ellos y guardaron sus tacos en estructuras de datos diferentes entre ellas. Marte guardó sus tacos en un ArrayList, Mercurio los guardó en una Hashtable, Saturno en una LinkedList y Venus en un arreglo. Y por alguna razón fuera de los límites del pensamiento de la galaxia, la tierra decidió guardar sus tacos en un ArrayDeque.
-    
-    Usamos iterator para poder acceder a los elementos de las estructuras mencionadas sin exponer su representación interna.
-    
-    \item \textbf{Observer}
-    
-    Como se mencionó anteriormente, hay un sistema para notificar a los clientes frecuentes en la taquería. Usamos observer para permitir definir una dependencia de “uno a muchos” entre la taquería y los clientes. De esta forma podemos lograr que la taquería notifique a todos sus clientes frecuentes al cambiar el estado de la taquería.
-    
-    \item \textbf{Adapter}
-    
-    Antes de la llegada de los tacos galácticos, ya se tenía una base para los tacos de la tierra, sin embargo, no se quiere cambiar el comportamiento de este código.
-    
-    Adapter nos va a permitir convertir la interfaz de la clase de los tacos de la tierra a una interfaz que se adaptará a la que esta hecha por los planeas que exportan los tacos galácticos.
-    
-    \item \textbf{Decorator}
-    
-    Dado que las combinaciones de ingredientes en los tacos galácticos no satisfacen a todos los clientes, se ha decidido que estos tendrán la libertad de agregar ingredientes extra, aumentando el precio del taco y su descripción de ingredientes.
-    
-    El patrón decorator nos ayudará a atribuir responsabilidades adicionales a los tacos dinámicamente. Es decir, las características del taco aumentará dependiendo de los ingredientes extra que se quieran agregar a los tacos.
+- **Iterator**: Cada uno de los planetas que acordaron crear sus propios tacos para la tierra no se pusieron de acuerdo entre ellos y guardaron sus tacos en estructuras de datos diferentes entre ellas. Marte guardó sus tacos en un ArrayList, Mercurio los guardó en una Hashtable, Saturno en una LinkedList y Venus en un arreglo. Y por alguna razón fuera de los límites del pensamiento de la galaxia, la tierra decidió guardar sus tacos en un ArrayDeque. Usamos iterator para poder acceder a los elementos de las estructuras mencionadas sin exponer su representación interna.
+- **Observer**: Como se mencionó anteriormente, hay un sistema para notificar a los clientes frecuentes en la taquería. Usamos observer para permitir definir una dependencia de “uno a muchos” entre la taquería y los clientes. De esta forma podemos lograr que la taquería notifique a todos sus clientes frecuentes al cambiar el estado de la taquería.
+- **Adapter**: Antes de la llegada de los tacos galácticos, ya se tenía una base para los tacos de la tierra, sin embargo, no se quiere cambiar el comportamiento de este código. Adapter nos va a permitir convertir la interfaz de la clase de los tacos de la tierra a una interfaz que se adaptará a la que esta hecha por los planeas que exportan los tacos galácticos.
+- **Decorator**: Dado que las combinaciones de ingredientes en los tacos galácticos no satisfacen a todos los clientes, se ha decidido que estos tendrán la libertad de agregar ingredientes extra, aumentando el precio del taco y su descripción de ingredientes. El patrón decorator nos ayudará a atribuir responsabilidades adicionales a los tacos dinámicamente. Es decir, las características del taco aumentará dependiendo de los ingredientes extra que se quieran agregar a los tacos.
+- **MVC**: Los datos que se guardarán en una base será información sobre los clientes frecuentes, nos interesa guardar su identificador id y su nombre. El sistema permitirá agregar y eliminar clientes de la base y los cambios se verán reflejados en un archivo que contendrá información sobre los datos. Además se tendrá una base con los tacos que vende cada uno de los planetas, incluyendo la base de los tacos del planeta tierra.
+Finalmente, nos interesa saber lo que opinan los clientes frecuentes sobre los tacos, así como de la interfaz gráfica, el funcionamiento del programa, etc. Por lo que tenemos una sección en la que estos pueden dejar sus comentarios. Estos comentarios pueden agregarse a la base de datos de comentarios, pero los clientes no tienen la opción de eliminarlos, ya que es un proceso interno del sistema ajeno a los clientes.
+La gestión de eventos estará reflejada en la clase principal de interacción con el usuario. En esta clase que llamaremos _SucursalMexico.java_ que representa el controlador, es donde se manipulan todas las herramientas necesarias para darle funcionalidad al software.
+Finalmente, se tendrá una interfaz que permitirá la interacción con el usuario, sin mostrar su funcionamiento interno dado por el controlador ni del uso de los datos.
 
-    \item \textbf{MVC}
-    
-    Los datos que se guardarán en una base será información sobre los clientes frecuentes, nos interesa guardar su identificador \textit{id} y su nombre. El sistema permitirá agregar y eliminar clientes de la base y los cambios se verán reflejados en un archivo que contendrá información sobre los datos.
-    
-    Además se tendrá una base con los tacos que vende cada uno de los planetas, incluyendo la base de los tacos del planeta tierra.
-    
-    Finalmente, nos interesa saber lo que opinan los clientes frecuentes sobre los tacos, así como de la interfaz gráfica, el funcionamiento del programa, etc. Por lo que tenemos una sección en la que estos pueden dejar sus comentarios. Estos comentarios pueden agregarse a la base de datos de comentarios, pero los clientes no tienen la opción de eliminarlos, ya que es un proceso interno del sistema ajeno a los clientes.
-    
-    La gestión de eventos estará reflejada en la clase principal de interacción con el usuario. En esta clase que llamaremos \textit{SucursalMexico.java} que representa el controlador, es donde se manipulan todas las herramientas necesarias para darle funcionalidad al software.
-    
-    Finalmente, se tendrá una interfaz que permitirá la interacción con el usuario, sin mostrar su funcionamiento interno dado por el controlador ni del uso de los datos.
-    
-\end{itemize}
-
-\section{Interfaz Gráfica}
+### Interfaz Gráfica
 
 La interfaz gráfica consta de 6 vistas diferentes que se mencionaran a continuación.
 
-\begin{itemize}
-    
-    \item \textbf{Bienvenida}
-    
-    En esta vista sólo ofrecemos un saludo al usuario para darle la bienvenida a nuestro software.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{Bienvenida.png}
-    \end{figure}
-    
-    \item \textbf{Compra de un taco}
-    
-    En este panel le damos la oportunidad al usuario de elegir todos los tacos que desee comprar al seleccionar un taco y presionar el botón llamado \textit{Comprar Taco}. En el cuadro de descripción se muestran los ingredientes que contiene un taco al dar click sobre alguno de ellos.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{Compra.png}
-    \end{figure}
-    
-    \item \textbf{Ingredientes Extra}
-    
-    En este apartado permitimos agregar ingredientes extra a los tacos seleccionados en el panel \textit{Comprar Taco}. Para agregar un ingrediente extra es necesario seleccionar un taco de la lista de tacos comprados y un ingrediente extra, seguido de dar click en el botón \textit{Seleccionar un taco y agregar ingrediente}.
-    
-    Además damos la oportunidad al usuario de eliminar algún taco que ya no quiera mantener en la lista de orden. Basta con seleccionar el taco a eliminar y presionar el botón \textit{Eliminar Taco de orden}.
+- **Bienvenida**
+	En esta vista sólo ofrecemos un saludo al usuario para darle la bienvenida a nuestro software.
+	![img1][im1.png]
+- **Compra de un taco**
+	En este panel le damos la oportunidad al usuario de elegir todos los tacos que desee comprar al seleccionar un taco y presionar el botón llamado \textit{Comprar Taco}. En el cuadro de descripción se muestran los ingredientes que contiene un taco al dar click sobre alguno de ellos.
+	![img2][im2.png]
+- **Ingredientes Extra**
+	En este apartado permitimos agregar ingredientes extra a los tacos seleccionados en el panel \textit{Comprar Taco}. Para agregar un ingrediente extra es necesario seleccionar un taco de la lista de tacos comprados y un ingrediente extra, seguido de dar click en el botón \textit{Seleccionar un taco y agregar ingrediente}.
+	Además damos la oportunidad al usuario de eliminar algún taco que ya no quiera mantener en la lista de orden. Basta con seleccionar el taco a eliminar y presionar el botón \textit{Eliminar Taco de orden}.
     
     \begin{figure}[H]
     \centering
