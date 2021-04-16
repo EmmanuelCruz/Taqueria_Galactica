@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE taqueria SYSTEM "TacosTerrenales.dtd">
+<taqueria>
+  <taco carne="Pastor" salsa="true" tortilla="Harina" verdura="true" precio="13.50"/>
+  <taco carne="Suadero" salsa="true" tortilla="Maíz" verdura="true" precio="13"/>
+  <taco carne="Campechano" salsa="false" tortilla="Maíz" verdura="false" precio="12"/>
+  <taco carne="Bistec" salsa="false" tortilla="Maíz" verdura="true" precio="12"/>
+  <taco carne="Longaniza" salsa="true" tortilla="Maíz" verdura="false" precio="10"/>
+  <taco carne="Cecina" salsa="true" tortilla="Maíz" verdura="true" precio="12.50"/>
+  <taco carne="Alambre" salsa="false" tortilla="Harina" verdura="false" precio="14"/>
+  <taco carne="Chuleta" salsa="true" tortilla="Maíz" verdura="true" precio="13"/>
+</taqueria>

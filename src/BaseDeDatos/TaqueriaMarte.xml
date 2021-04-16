@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE taqueria SYSTEM "Tacos.dtd">
+<taqueria>
+  <taco nombre="Marcianito Bailador" descripcion="Carne de vaca loca, Lechuga desidratada y polvo de asteroides" precio="10.00"/>
+  <taco nombre="Valles Lunares" descripcion="Ojo de vaca loca, Queso de la Luna y Salsa Secreta Alienígena" precio="200.00"/>
+  <taco nombre="Está Que Arde" descripcion="Cráter, Jitomate Magnesico, Salsa Volcanica" precio="30.00"/>
+  <taco nombre="Ares" descripcion="Carne Verde, Aros de Saturno, Queso de la Luna" precio="40.00"/>
+  <taco nombre="Tharsis" descripcion="Mano de Marciano de Soya, Pesuñas de Vaca y Salsa Secreta" precio="23.00"/>
+  <taco nombre="A Marte" descripcion="Aros de Saturno, Rimel de miel y Pepinillos de Geosilica" precio="47.50"/>
+  <taco nombre="Marci Marte" descripcion="Dedos Marcianicos, Queso de la Luna y Salsa de Estrellas Fugaces" precio="243.50"/>
+  <taco nombre="Fuego Ardiente" descripcion="Piedras Ardientes, Aros de Saturno y Estrellas Fugaces" precio="52.00"/>
+</taqueria>

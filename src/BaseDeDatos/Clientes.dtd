@@ -1,0 +1,9 @@
+<!--Archivo que describe los clientes frecuentes de una taquería.
+    Author Cruz Hernández Emmanuel y Karem Ramos Calpulalpan.
+    Version Octubre 2019
+  -->
+<!ELEMENT clientesFrecuentes (#PCDATA)>
+<!ELEMENT cliente (#PCDATA)>
+<!ATTLIST clientesFrecuentes cantidad CDATA #REQUIRED>
+<!ATTLIST cliente id CDATA #REQUIRED>
+<!ATTLIST cliente nombre CDATA #REQUIRED>

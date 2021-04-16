@@ -1,0 +1,7 @@
+<!--Archivo que describe los comentarios de una taquería.
+    Author Cruz Hernández Emmanuel y Karem Ramos Calpulalpan.
+    Version Noviembre 2019
+  -->
+<!ELEMENT opiniones (#PCDATA)>
+<!ELEMENT comentario (#PCDATA)>
+<!ATTLIST comentario coment CDATA #REQUIRED>

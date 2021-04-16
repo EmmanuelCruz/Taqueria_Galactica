@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE clientesFrecuentes SYSTEM "Clientes.dtd">
+<clientesFrecuentes cantidad="13">
+  <cliente id="1" nombre="Donny Shillito"/>
+  <cliente id="2" nombre="Gabriell Pedden"/>
+  <cliente id="3" nombre="Celestina Fishleigh"/>
+  <cliente id="4" nombre="Barclay Benedick"/>
+  <cliente id="5" nombre="Dyanna Draxford"/>
+  <cliente id="7" nombre="Paxon Tomlett"/>
+  <cliente id="8" nombre="Shep Taverner"/>
+  <cliente id="9" nombre="Jada Pardoe"/>
+  <cliente id="10" nombre="Darice Trotton"/>
+  <cliente id="11" nombre="Emmanue"/>
+  <cliente id="13" nombre="Emma"/>
+</clientesFrecuentes>

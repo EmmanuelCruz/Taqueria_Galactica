@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE taqueria SYSTEM "Tacos.dtd">
+<taqueria>
+  <taco nombre="Venustiano Carranza" descripcion="Carne Nitrogenada, LechuVenus, JitoVenus y Queso de la Luna" precio="100.00"/>
+  <taco nombre="Diosa del Amor" descripcion="Ácido Sulfúrico, Leche Espacial y Aros de Saturno" precio="202.00"/>
+  <taco nombre="Friendzone" descripcion="Carne Ácida, Aros de Saturno y Chiles Toreados" precio="302.00"/>
+  <taco nombre="No Eres Tú, Soy Yo" descripcion="Carne Venusiana, Chiles Soplados y Aros de Saturno" precio="401.00"/>
+  <taco nombre="Amigos con Derecho" descripcion="Salsa Espacial, LechuVenus y JitoVenus" precio="509.00"/>
+  <taco nombre="El Argón" descripcion="Carne Argónica, Salsa Venusiana y Queso de la Luna" precio="320.50"/>
+  <taco nombre="Atalanta Planitia" descripcion="Churubusco, Lechusiatocio y Queso de la Luna" precio="321.50"/>
+  <taco nombre="Neith" descripcion="Chetos, JitoVenus y Aros de Saturno" precio="875.50"/>
+</taqueria>

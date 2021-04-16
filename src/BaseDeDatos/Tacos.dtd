@@ -1,0 +1,9 @@
+<!--Archivo que describe los tacos de una taquería.
+    Author Cruz Hernández Emmanuel y Karem Ramos Calpulalpan.
+    Version Octubre 2019
+  -->
+<!ELEMENT taqueria (#PCDATA)>
+<!ELEMENT taco (#PCDATA)>
+<!ATTLIST taco nombre CDATA #REQUIRED>
+<!ATTLIST taco descripcion CDATA #REQUIRED>
+<!ATTLIST taco precio CDATA #REQUIRED>
