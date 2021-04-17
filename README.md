@@ -41,7 +41,7 @@ La interfaz gráfica consta de 6 vistas diferentes que se mencionaran a continua
 
 - **Sobre Clientes**
 	Para ser cliente frecuente es necesario ingresar texto en el apartado para ingresar un nombre y presionar el botón _Registrar_. Una vez hecho esto, el usuario será notificado con un recordatorio para consumir tacos galácticos.
-	Para eliminar la subscripción de la taquería, basta con ingresar el id del usuario presionar el botón \textit{Eliminar}.
+	Para eliminar la subscripción de la taquería, basta con ingresar el id del usuario presionar el botón _Eliminar_.
 
 	![img4](ImgReadme/img4.png)
 
@@ -50,7 +50,7 @@ La interfaz gráfica consta de 6 vistas diferentes que se mencionaran a continua
 	![img5](ImgReadme/img5.png)
 
 - **Opinión de los clientes**
-	Permitimos a los usuarios dar a conocer lo que piensan otros clientes frecuentes de la taquería. Para poder ingresar un comentario, se debe estar en la base de datos de clientes frecuentes. Para lograr añadir un comentario a la lista es necesario identificar al usuario para saber que es cliente frecuente, escribir el comentario y presionar el botón \textit{Registrar Comentario}.
+	Permitimos a los usuarios dar a conocer lo que piensan otros clientes frecuentes de la taquería. Para poder ingresar un comentario, se debe estar en la base de datos de clientes frecuentes. Para lograr añadir un comentario a la lista es necesario identificar al usuario para saber que es cliente frecuente, escribir el comentario y presionar el botón _Registrar Comentario_.
 	Por tiempo, ya no agregamos la opción de que un usuario cuente con contraseña para poder ingresar un comentario o para poder eliminarse de la base de datos.
 
 	![img6](ImgReadme/img6.png)
@@ -62,7 +62,7 @@ La interfaz gráfica consta de 6 vistas diferentes que se mencionaran a continua
 
 ### Ejecución de la práctica
 
-Se deben ingresar los siguientes comandos en una terminal que este en la carpeta llamada\\Proyecto02\_CruzEmmanuel\_RamosKarem
+Se deben ingresar los siguientes comandos en una terminal:
 
 1. ant jar
 2. ant run
@@ -70,7 +70,7 @@ Se deben ingresar los siguientes comandos en una terminal que este en la carpeta
 
 ### Notas Adicionales
 
-Dividimos nuestros archivos en las siguientes carpetas dentro de la carpeta llamada \textit{src}.
+Dividimos nuestros archivos en las siguientes carpetas dentro de la carpeta llamada _src_.
 
 - **BaseDeDatos**
 	Usamos archivos XML como apoyo para el almacenamiento de las bases de datos. Tenemos una clase lectora y escritora de archivos XML llamadas _LectorXML.java_ y _EscritorXML.java_, respectivamente.
