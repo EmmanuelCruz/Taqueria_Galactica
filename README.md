@@ -30,99 +30,66 @@ La interfaz gráfica consta de 6 vistas diferentes que se mencionaran a continua
 
 - **Bienvenida**
 	En esta vista sólo ofrecemos un saludo al usuario para darle la bienvenida a nuestro software.
-	![img1][im1.png]
+	![img1](ImgReadme/img1.png)
 - **Compra de un taco**
 	En este panel le damos la oportunidad al usuario de elegir todos los tacos que desee comprar al seleccionar un taco y presionar el botón llamado \textit{Comprar Taco}. En el cuadro de descripción se muestran los ingredientes que contiene un taco al dar click sobre alguno de ellos.
-	![img2][im2.png]
+	![img2](ImgReadme/img2.png)
 - **Ingredientes Extra**
-	En este apartado permitimos agregar ingredientes extra a los tacos seleccionados en el panel \textit{Comprar Taco}. Para agregar un ingrediente extra es necesario seleccionar un taco de la lista de tacos comprados y un ingrediente extra, seguido de dar click en el botón \textit{Seleccionar un taco y agregar ingrediente}.
-	Además damos la oportunidad al usuario de eliminar algún taco que ya no quiera mantener en la lista de orden. Basta con seleccionar el taco a eliminar y presionar el botón \textit{Eliminar Taco de orden}.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{IngredienteExtra.png}
-    \end{figure}
-    
-    \item \textbf{Sobre Clientes}
-    
-    Para ser cliente frecuente es necesario ingresar texto en el apartado para ingresar un nombre y presionar el botón \textit{Registrar}. Una vez hecho esto, el usuario será notificado con un recordatorio para consumir tacos galácticos.
-    
-    Para eliminar la subscripción de la taquería, basta con ingresar el id del usuario presionar el botón \textit{Eliminar}.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{Fanaticos.png}
-    \end{figure}
-    
-    Las notificaciones a los usuarios está simulada con impresiones en la terminal. Como el usuario es ajeno al envió de notificaciones, ya que este proceso debe ser automático, hacemos uso de Threads para que cada cierto tiempo se esten enviando notificaciones a todos los usuarios que están en la base de datos de clientes. Las notificaciones se ven de la siguiente forma.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{Notificar.png}
-    \end{figure}
-    
-    \item \textbf{Opinión de los clientes}
-    
-    Permitimos a los usuarios dar a conocer lo que piensan otros clientes frecuentes de la taquería. Para poder ingresar un comentario, se debe estar en la base de datos de clientes frecuentes. Para lograr añadir un comentario a la lista es necesario identificar al usuario para saber que es cliente frecuente, escribir el comentario y presionar el botón \textit{Registrar Comentario}.
-    
-    Por tiempo, ya no agregamos la opción de que un usuario cuente con contraseña para poder ingresar un comentario o para poder eliminarse de la base de datos.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{Opinion.png}
-    \end{figure}
-    
-    \item \textbf{Pago}
-    
-    Este panel es un apartado para simular el pago del cliente a la taquería. El pago está dado por la suma del precio de todos los tacos que están en la orden. Estos tacos incluyen en sí el precio de los ingredientes extra si es que los contiene.
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{Cuenta.png}
-    \end{figure}
-    
-\end{itemize}
+	En este apartado permitimos agregar ingredientes extra a los tacos seleccionados en el panel _Comprar Taco_. Para agregar un ingrediente extra es necesario seleccionar un taco de la lista de tacos comprados y un ingrediente extra, seguido de dar click en el botón _Seleccionar un taco y agregar ingrediente_.
+	Además damos la oportunidad al usuario de eliminar algún taco que ya no quiera mantener en la lista de orden. Basta con seleccionar el taco a eliminar y presionar el botón _Eliminar Taco de orden_.
+	![img3](ImgReadme/img3.png)
 
-\section{Ejecución de la práctica}
+- **Sobre Clientes**
+	Para ser cliente frecuente es necesario ingresar texto en el apartado para ingresar un nombre y presionar el botón _Registrar_. Una vez hecho esto, el usuario será notificado con un recordatorio para consumir tacos galácticos.
+	Para eliminar la subscripción de la taquería, basta con ingresar el id del usuario presionar el botón \textit{Eliminar}.
+
+	![img4](ImgReadme/img4.png)
+
+	Las notificaciones a los usuarios está simulada con impresiones en la terminal. Como el usuario es ajeno al envió de notificaciones, ya que este proceso debe ser automático, hacemos uso de Threads para que cada cierto tiempo se esten enviando notificaciones a todos los usuarios que están en la base de datos de clientes. Las notificaciones se ven de la siguiente forma.
+
+	![img5](ImgReadme/img5.png)
+
+- **Opinión de los clientes**
+	Permitimos a los usuarios dar a conocer lo que piensan otros clientes frecuentes de la taquería. Para poder ingresar un comentario, se debe estar en la base de datos de clientes frecuentes. Para lograr añadir un comentario a la lista es necesario identificar al usuario para saber que es cliente frecuente, escribir el comentario y presionar el botón \textit{Registrar Comentario}.
+	Por tiempo, ya no agregamos la opción de que un usuario cuente con contraseña para poder ingresar un comentario o para poder eliminarse de la base de datos.
+
+	![img6](ImgReadme/img6.png)
+
+- **Pago**
+	Este panel es un apartado para simular el pago del cliente a la taquería. El pago está dado por la suma del precio de todos los tacos que están en la orden. Estos tacos incluyen en sí el precio de los ingredientes extra si es que los contiene.
+
+	![img7](ImgReadme/img7.png)
+
+### Ejecución de la práctica
 
 Se deben ingresar los siguientes comandos en una terminal que este en la carpeta llamada\\Proyecto02\_CruzEmmanuel\_RamosKarem
 
-\begin{itemize}
-    \item ant jar
-    
-    \item ant run
-    
-    \item ant clean
-\end{itemize}
+1. ant jar
+2. ant run
+3. ant clean
 
-\section{Notas Adicionales}
+### Notas Adicionales
 
 Dividimos nuestros archivos en las siguientes carpetas dentro de la carpeta llamada \textit{src}.
 
-\begin{itemize}
-    \item \textbf{BaseDeDatos}
-    
-    Usamos archivos XML como apoyo para el almacenamiento de las bases de datos. Tenemos una clase lectora y escritora de archivos XML llamadas \textit{LectorXML.java} y \textit{EscritorXML.java}, respectivamente.
-    
-    Los archivos XML que se usan para las lecturas y escrituras de las clases anteriores están almacenadas en esta carpeta.
-    
-    \item \textbf{Diagramas}
-    
-    En esta carpeta se encuentran todos los diagramas solicitados en las especificaciones del Proyecto02.
-    
-    \item \textbf{Imagenes}
-    
-    En esta carpeta almacenamos las imágenes usadas en la interfaz gráfica. Las imágenes fueron diseñadas por \textit{Emmanuel Cruz Hernández}, integrante del equipo, por lo que no agregamos un autor externo.
-    
-    \item \textbf{taqueriaGalactica}
-    
-    Almacena toda la implementación del proyecto. Están todos los archivos con extensión .java así como un archivo con extensión .form que permite la ejecución de la interfaz gráfica del proyecto.
-    
-\end{itemize}
+- **BaseDeDatos**
+	Usamos archivos XML como apoyo para el almacenamiento de las bases de datos. Tenemos una clase lectora y escritora de archivos XML llamadas _LectorXML.java_ y _EscritorXML.java_, respectivamente.
+	Los archivos XML que se usan para las lecturas y escrituras de las clases anteriores están almacenadas en esta carpeta.
+
+- **Diagramas**
+	En esta carpeta se encuentran todos los diagramas solicitados en las especificaciones del Proyecto02.
+
+- **Imagenes**
+	En esta carpeta almacenamos las imágenes usadas en la interfaz gráfica. Las imágenes fueron diseñadas por _Emmanuel Cruz Hernández_, integrante del equipo, por lo que no agregamos un autor externo.
+
+- **taqueriaGalactica**
+	Almacena toda la implementación del proyecto. Están todos los archivos con extensión .java así como un archivo con extensión .form que permite la ejecución de la interfaz gráfica del proyecto.
+
+
 
 Usamos esta forma de almacenar todos nuestros archivos para que sea más cómodo encontrar cada uno de estos. 
 
-Para lograr la simulación de que las notificaciones se estén enviando automáticamente hacemos uso de Threads. Este se encargará de estar enviando notificaciones a todos los clientes dentro de la base cada cierto tiempo. El Thread que realiza esta tarea está en la clase \textit{SoftwareVenta.java}. Esta clase implementa la interfaz \textit{Runnable}. El método \textit{run} es el encargado de enviar notificaciones infinitamente hasta que el programa termine su ejecución. El método \textit{start()} es llamada en el main de esta misma clase.
+Para lograr la simulación de que las notificaciones se estén enviando automáticamente hacemos uso de Threads. Este se encargará de estar enviando notificaciones a todos los clientes dentro de la base cada cierto tiempo. El Thread que realiza esta tarea está en la clase _SoftwareVenta.java_. Esta clase implementa la interfaz _Runnable_. El método _run_ es el encargado de enviar notificaciones infinitamente hasta que el programa termine su ejecución. El método _start()_ es llamada en el main de esta misma clase.
 
 Finalmente, es importante mencionar que usamos la herramienta NetBeans para facilitar la creación de la interfaz gráfica.
 
